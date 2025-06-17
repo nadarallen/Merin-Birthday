@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.merin-container {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fade-in {
+  font-size: 3rem;
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
+}
+
+.rose-img {
+  margin-top: 20px;
+  width: 100px;
+  height: auto;
+  animation: fadeIn 4s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  font-family: 'Press Start 2P', cursive;
+  image-rendering: pixelated;
+  text-rendering: optimizeLegibility;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.surprise-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #ff5f8f;
+  color: white;
+  cursor: pointer;
+  animation: fadeIn 8s ease-in-out forwards;
+  opacity: 0;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.surprise-btn:hover {
+  background-color: #ff5f8f;
+  color: black;
+  transform: scale(1.05);
+}
+.royal-letter {
+  margin-top: 40px;
+  padding: 30px;
+  max-width: 600px;
+  max-height: 300px;               /* limits height */
+  overflow-y: auto;                /* enables vertical scroll */
+  background-color: #f8e5c0;
+  color: #5a3e1b;
+  border: 8px double #a86c27;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  line-height: 1.8;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  opacity: 0;
+  box-shadow: 0 0 40px rgba(255, 235, 185, 0.5);
+}
+.royal-letter::-webkit-scrollbar {
+  width: 6px;
+}
+
+.royal-letter::-webkit-scrollbar-thumb {
+  background-color: #a86c27;
+  border-radius: 3px;
+}
+.letter-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+
