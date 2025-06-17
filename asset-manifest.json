@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Merin-Birthday/static/css/main.06d6b2ad.css",
+    "main.js": "/Merin-Birthday/static/js/main.41d16678.js",
+    "static/js/453.37c47484.chunk.js": "/Merin-Birthday/static/js/453.37c47484.chunk.js",
+    "static/media/bg-music.mp3": "/Merin-Birthday/static/media/bg-music.cf4c23e9d3191af8dd79.mp3",
+    "index.html": "/Merin-Birthday/index.html",
+    "main.06d6b2ad.css.map": "/Merin-Birthday/static/css/main.06d6b2ad.css.map",
+    "main.41d16678.js.map": "/Merin-Birthday/static/js/main.41d16678.js.map",
+    "453.37c47484.chunk.js.map": "/Merin-Birthday/static/js/453.37c47484.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06d6b2ad.css",
+    "static/js/main.41d16678.js"
+  ]
+}
