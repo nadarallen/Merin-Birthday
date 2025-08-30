@@ -247,3 +247,425 @@ body {
     margin-bottom: 20px;
   }
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .merin-container {
+    padding: 10px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .fade-in {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .rose-img {
+    width: 80px;
+    margin-top: 15px;
+  }
+
+  .surprise-btn {
+    font-size: 1rem;
+    padding: 15px 20px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .letter-page {
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .royal-letter {
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 95%;
+    max-height: 70vh;
+    font-size: 0.6rem;
+    line-height: 1.6;
+  }
+
+  .royal-letter p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .live-age {
+    font-size: 0.5rem;
+    padding: 8px;
+    margin-top: 15px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .campfire-scene {
+    width: 50px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .messages-container {
+    padding: 15px;
+  }
+
+  .messages-title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .messages-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .message-btn {
+    font-size: 0.8rem;
+    padding: 15px 12px;
+    min-height: 50px;
+    width: 100%;
+  }
+
+  .back-btn {
+    font-size: 0.9rem;
+    padding: 12px 18px;
+    margin-top: 15px;
+    width: 90%;
+    max-width: 200px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .fade-in {
+    font-size: 1.8rem;
+  }
+
+  .rose-img {
+    width: 70px;
+  }
+
+  .surprise-btn {
+    font-size: 0.9rem;
+    padding: 12px 16px;
+  }
+
+  .royal-letter {
+    padding: 15px;
+    font-size: 0.55rem;
+    line-height: 1.5;
+  }
+
+  .live-age {
+    font-size: 0.45rem;
+    padding: 6px;
+  }
+
+  .messages-title {
+    font-size: 0.9rem;
+  }
+
+  .message-btn {
+    font-size: 0.75rem;
+    padding: 12px 10px;
+  }
+
+  .back-btn {
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .merin-container {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .fade-in {
+    font-size: 1.5rem;
+    margin: 5px 10px;
+  }
+
+  .rose-img {
+    width: 60px;
+    margin-top: 10px;
+  }
+
+  .surprise-btn {
+    margin-top: 15px;
+    padding: 10px 16px;
+  }
+
+  .royal-letter {
+    max-height: 60vh;
+    margin-top: 15px;
+  }
+
+  .campfire-scene {
+    width: 40px;
+    bottom: 5px;
+    left: 5px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .surprise-btn:hover,
+  .message-btn:hover,
+  .back-btn:hover {
+    transform: none;
+  }
+
+  .surprise-btn:active,
+  .message-btn:active,
+  .back-btn:active {
+    transform: scale(0.98);
+  }
+
+  .message-btn {
+    min-height: 60px; /* Larger touch target */
+  }
+
+  .back-btn {
+    min-height: 44px; /* Minimum touch target size */
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .rose-img,
+  .campfire-scene {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Safe Area for Notched Devices */
+@supports (padding: max(0px)) {
+  .merin-container {
+    padding-left: max(10px, env(safe-area-inset-left));
+    padding-right: max(10px, env(safe-area-inset-right));
+    padding-top: max(10px, env(safe-area-inset-top));
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+}
+
+/* Additional Mobile Text Improvements */
+@media (max-width: 768px) {
+  .royal-letter p {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  .royal-letter strong,
+  .royal-letter span {
+    display: inline-block;
+    margin: 5px 0;
+    word-break: break-word;
+  }
+  
+  /* Improve button text wrapping */
+  .message-btn {
+    word-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.3;
+  }
+  
+  /* Better spacing for mobile */
+  .royal-letter br {
+    margin: 8px 0;
+  }
+  
+  /* Ensure proper text sizing */
+  .royal-letter {
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+  }
+}
+
+/* Prevent horizontal scrolling on mobile */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .merin-container,
+  .letter-page,
+  .royal-letter {
+    overflow-x: hidden;
+  }
+}
+
+/* Ensure back button is always visible in poems section */
+.messages-container .back-btn {
+  position: relative;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: auto;
+  min-width: 150px;
+}
+
+/* Specific styling for poems section back button */
+.messages-container:has(.messages-title:contains("Poem")) .back-btn {
+  background-color: #a86c27;
+  color: white;
+  border: 2px solid #5a3e1b;
+  box-shadow: 0 4px 8px rgba(168, 108, 39, 0.3);
+}
+
+/* Ensure proper spacing in poems grid */
+.messages-container .messages-grid + .back-btn {
+  margin-top: 25px;
+  clear: both;
+}
+
+/* Enhanced Mobile Styles */
+@media (max-width: 768px) {
+  /* Better touch targets */
+  .surprise-btn,
+  .message-btn,
+  .back-btn {
+    min-height: 48px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(168, 108, 39, 0.3);
+  }
+
+  /* Improved spacing for mobile */
+  .merin-container {
+    gap: 15px;
+  }
+
+  .fade-in {
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .rose-img {
+    margin-bottom: 15px;
+  }
+
+  /* Better letter readability on mobile */
+  .royal-letter {
+    line-height: 1.8;
+    word-spacing: 0.5px;
+    letter-spacing: 0.3px;
+  }
+
+  .royal-letter p {
+    margin-bottom: 15px;
+  }
+
+  /* Enhanced mobile navigation */
+  .messages-container {
+    gap: 20px;
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+
+  .messages-title {
+    margin-bottom: 25px;
+    line-height: 1.3;
+  }
+
+  /* Better grid layout for mobile */
+  .messages-grid {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .message-btn {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(168, 108, 39, 0.4);
+    transition: all 0.2s ease;
+  }
+
+  .message-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(168, 108, 39, 0.3);
+  }
+
+  /* Enhanced back button for mobile */
+  .back-btn {
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(168, 108, 39, 0.4);
+    transition: all 0.2s ease;
+  }
+
+  .back-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(168, 108, 39, 0.3);
+  }
+
+  /* Better scrollbar for mobile */
+  .royal-letter::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .royal-letter::-webkit-scrollbar-thumb {
+    background-color: #a86c27;
+    border-radius: 4px;
+  }
+
+  .royal-letter::-webkit-scrollbar-track {
+    background-color: rgba(168, 108, 39, 0.1);
+    border-radius: 4px;
+  }
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  /* Reduce animations for better performance */
+  .fade-in,
+  .rose-img,
+  .surprise-btn {
+    animation-duration: 2s;
+  }
+
+  /* Optimize transitions */
+  .surprise-btn,
+  .message-btn,
+  .back-btn {
+    transition: all 0.15s ease;
+  }
+
+  /* Better text rendering */
+  .royal-letter,
+  .messages-title {
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Mobile Accessibility Improvements */
+@media (max-width: 768px) {
+  /* Better focus indicators */
+  .surprise-btn:focus,
+  .message-btn:focus,
+  .back-btn:focus {
+    outline: 3px solid #ff5f8f;
+    outline-offset: 2px;
+  }
+
+  /* Improved contrast for small text */
+  .royal-letter {
+    color: #4a2f0f;
+  }
+
+  .live-age {
+    color: #4a2f0f;
+    background-color: #f8e5c0;
+  }
+}
