@@ -266,7 +266,6 @@ export default function Merin() {
             </div>
           ) : showPoems ? (
             <div className="messages-container">
-              {console.log('Rendering poems section, showPoems:', showPoems, 'selectedPoem:', selectedPoem)}
               {!selectedPoem ? (
                 <>
                   <h2 className="messages-title">Choose an Unsent Poem</h2>
@@ -282,11 +281,9 @@ export default function Merin() {
                       </button>
                     ))}
                   </div>
-                  {console.log('About to render back button')}
                   <button onClick={handleBackToLetterFromPoems} className="back-btn">
                     Back to Letter
                   </button>
-                  {console.log('Back button rendered')}
                 </>
               ) : (
                 <div className="royal-letter">
